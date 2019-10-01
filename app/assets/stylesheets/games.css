@@ -1,0 +1,80 @@
+* {
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+.game-main__side {
+  width: 300px;
+  background-color: #292929;
+}
+.game-main__side__header {
+  height: 500px;
+  width: 300px;
+  border-bottom: 1px solid #e2e0e0;
+}
+.game-main__side__header__top {
+  height: 250px;
+}
+.game-main__side__header__top__logo {
+  color: antiquewhite;
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+.game-main__side__header__top__logo__text {
+  color: #faa403;
+  font-family: "klee", sans-serif;
+  font-size: 30px;
+}
+.game-main__side__header__top__search__box {
+  display: flex;
+  margin: auto;
+  border-radius: 45px;
+  height: 40px;
+  width: 250px;
+}
+.game-main__side__header__under__tag {
+  padding: 20px;
+}
+.game-main__side__header__under__tag__box {
+  margin: 0;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #faa403;
+  padding: 0.8em 0.5em;
+  font-size: 0.9rem;
+  height: 1em;
+  line-height: 1em;
+  color: white;
+}
+.game-main__side__footer {
+  padding: 40px 0 40px 0;
+}
+.game-main__side__footer__sign__in {
+  display: flex;
+  margin: 30px auto;
+  height: 50px;
+  width: 200px;
+  background: #fff;
+}
+.game-main__side__footer__sign__in__text {
+  margin: auto;
+  font-size: 20px;
+  color: #faa403;
+  font-family: "klee";
+  text-decoration: none;
+}
+.game-main__side__footer__sign__up {
+  display: flex;
+  margin: 30px auto;
+  height: 50px;
+  width: 200px;
+  background: #fdfdfd;
+}
+.game-main__side__footer__sign__up__text {
+  margin: auto;
+  font-size: 20px;
+  color: #faa403;
+  font-family: "klee";
+  text-decoration: none;
+}
