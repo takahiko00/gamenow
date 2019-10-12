@@ -21,4 +21,5 @@ class GamesController < ApplicationController
             params.require(:group).permit(:name, :text, :servername, :image).merge(user_id: current_user.id)
         end
 
+        
 end
