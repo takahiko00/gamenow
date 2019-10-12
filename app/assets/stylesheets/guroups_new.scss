@@ -1,0 +1,13 @@
+.group-main__center{
+  width: 480px;
+  margin: auto;
+  &__from{
+    &__header{
+      height: 100px;
+      border-bottom: 1px solid #000000;
+      &__text{
+        padding: 50px 0 0 40px;
+      }
+    }
+  }
+}

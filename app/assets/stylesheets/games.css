@@ -6,6 +6,7 @@
 .game-main__side {
   width: 300px;
   background-color: #292929;
+  display: inline-block;
 }
 .game-main__side__header {
   height: 500px;
@@ -48,7 +49,7 @@
   color: white;
 }
 .game-main__side__footer {
-  padding: 40px 0 40px 0;
+  padding: 40px 0 60px 0;
 }
 .game-main__side__footer__sign__in {
   display: flex;
@@ -77,4 +78,9 @@
   color: #faa403;
   font-family: "klee";
   text-decoration: none;
+}
+.game-main__center {
+  display: inline-block;
+  height: 200px;
+  background-color: aqua;
 }

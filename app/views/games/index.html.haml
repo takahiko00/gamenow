@@ -14,8 +14,16 @@
           .game-main__side__header__under__tag__box
             apex
     .game-main__side__footer
-      .game-main__side__footer__sign
-        .game-main__side__footer__sign__in
-          %a.game-main__side__footer__sign__in__text{:href => "users/sign_in"} Log_in
-        .game-main__side__footer__sign__up
-          %a.game-main__side__footer__sign__up__text{:href => "users/sign_up"} Sign_up
+      -if user_signed_in?
+        .game-main__side__footer__sign
+          .game-main__side__footer__sign__in
+            =link_to "Create team", new_group_path, method: :get, class: "game-main__side__footer__sign__up__text"
+          .game-main__side__footer__sign__up
+            =link_to "Log out", destroy_user_session_path, method: :delete, class: "game-main__side__footer__sign__up__text"
+      -else
+        .game-main__side__footer__sign
+          .game-main__side__footer__sign__in
+            %a.game-main__side__footer__sign__in__text{:href => "users/sign_in"} Log_in
+          .game-main__side__footer__sign__up
+            %a.game-main__side__footer__sign__up__text{:href => "users/sign_up"} Sign_up
+  .game-main__center
