@@ -1,8 +1,4 @@
-class GamesController < ApplicationController
-
-  def index
-  end
-
+class GroupsController < ApplicationController
   def new
     @group = Group.new
   end
@@ -10,7 +6,7 @@ class GamesController < ApplicationController
   def create
     @group = Group.new(group_params)
     if @group.save
-        render 'index'
+        render '/games/index'
     else
         render 'new'
     end

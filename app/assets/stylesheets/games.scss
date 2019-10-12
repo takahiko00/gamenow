@@ -6,9 +6,12 @@
     margin: 0;
     padding: 0;
 }
+
+
 .game-main__side{
   width: 300px;
   background-color: rgb(41, 41, 41);
+  display: inline-block;
   &__header{
     height: 500px;
     width: 300px;
@@ -54,7 +57,7 @@
     }
   }
   &__footer{
-    padding: 40px 0 40px 0;
+    padding: 40px 0 60px 0;
     &__sign{
       &__in{
         display:flex;
@@ -86,4 +89,10 @@
       }
     }
   }
+}
+
+.game-main__center{
+  display: inline-block;
+  height: 200px;
+  background-color: aqua
 }
