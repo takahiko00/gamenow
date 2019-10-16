@@ -7,13 +7,16 @@
       .group-main__center__from__menber
         .group-main__center__from__menber__1set
           .group-main__center__from__menber__1set__header
-            グループ名
-          = f.text_field :name, class: "group-main__center__from__menber__1set__input"
+            .group-main__center__from__menber__1set__header__text
+              グループ名
+            = f.text_field :name, class: "group-main__center__from__menber__1set__input"
           .group-main__center__from__menber__1set__header
-            グループ詳細
-          = f.text_field :text, class: "group-main__center__from__menber__1set__input"
+            .group-main__center__from__menber__1set__header__text
+              グループ詳細
+            = f.text_field :text, class: "group-main__center__from__menber__1set__input"
           .group-main__center__from__menber__1set__header
-            VCServer
-          = f.text_field :servername, class: "group-main__center__from__menber__1set__input"
-          = f.submit "登録する"
+            .group-main__center__from__menber__1set__header__text
+              VCServer
+            = f.text_field :servername, class: "group-main__center__from__menber__1set__input"
+            = f.submit "登録する"
 
