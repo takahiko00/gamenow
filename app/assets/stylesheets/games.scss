@@ -7,11 +7,12 @@
     padding: 0;
 }
 
-
+.game-now{
+  display: flex;
+}
 .game-main__side{
   width: 300px;
-  background-color: rgb(41, 41, 41);
-  display: inline-block;
+  float: left;
   &__header{
     height: 500px;
     width: 300px;
@@ -24,7 +25,7 @@
         padding: 50px 0 50px 0;
         &__text{
           color:  rgb(250, 164, 3);
-          font-family: 'klee',sans-serif;
+          font-family: 'Ubuntu Mono', monospace;
           font-size: 30px;
         }
       }
@@ -69,7 +70,7 @@
           margin: auto;
           font-size: 20px;
           color:  rgb(250, 164, 3);
-          font-family: 'klee';
+          font-family: 'Ubuntu Mono', monospace;
           text-decoration:	none;
         }
       }
@@ -83,7 +84,7 @@
           margin: auto;
           font-size: 20px;
           color:  rgb(250, 164, 3);
-          font-family: 'klee';
+          font-family: 'Ubuntu Mono', monospace;
           text-decoration:	none;
         }
       }
@@ -91,5 +92,21 @@
   }
 }
 
-.game-main__center{
+.game-main-centre{
+  margin: 100px 0 0 0;
+  &__group{
+    display: flex;
+  }
+}
+
+.group-main{
+  margin: 0 50px 0 10px;
+  &__header{
+    height: 30px;
+    width: 300px;
+    background-color: aquamarine;
+  }
+  &__name{
+    text-align: center
+  }
 }

@@ -3,10 +3,12 @@
   margin: 0;
   padding: 0;
 }
+.game-now {
+  display: flex;
+}
 .game-main__side {
   width: 300px;
-  background-color: #292929;
-  display: inline-block;
+  float: left;
 }
 .game-main__side__header {
   height: 500px;
@@ -23,7 +25,7 @@
 }
 .game-main__side__header__top__logo__text {
   color: #faa403;
-  font-family: "klee", sans-serif;
+  font-family: "Ubuntu Mono", monospace;
   font-size: 30px;
 }
 .game-main__side__header__top__search__box {
@@ -62,7 +64,7 @@
   margin: auto;
   font-size: 20px;
   color: #faa403;
-  font-family: "klee";
+  font-family: "Ubuntu Mono", monospace;
   text-decoration: none;
 }
 .game-main__side__footer__sign__up {
@@ -76,6 +78,23 @@
   margin: auto;
   font-size: 20px;
   color: #faa403;
-  font-family: "klee";
+  font-family: "Ubuntu Mono", monospace;
   text-decoration: none;
+}
+.game-main-centre {
+  margin: 100px 0 0 0;
+}
+.game-main-centre__group {
+  display: flex;
+}
+.group-main {
+  margin: 0 50px 0 10px;
+}
+.group-main__header {
+  height: 30px;
+  width: 300px;
+  background-color: aquamarine;
+}
+.group-main__name {
+  text-align: center;
 }
