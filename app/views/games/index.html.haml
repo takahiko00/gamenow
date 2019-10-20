@@ -1,4 +1,4 @@
-.game-main
+.game-now
   .game-main__side
     .game-main__side__header
       .game-main__side__header__top
@@ -26,4 +26,21 @@
             %a.game-main__side__footer__sign__in__text{:href => "users/sign_in"} Log_in
           .game-main__side__footer__sign__up
             %a.game-main__side__footer__sign__up__text{:href => "users/sign_up"} Sign_up
-  .game-main__center
+  .game-main-centre
+    .game-main-centre__group
+      - @groups.each do |group|
+        .group-main
+          .group-main__header
+            .group-main__name
+              = group.name
+          .game-main__tag
+            .game-main__side__header__under__tag__box
+              pubg
+            .group-main__text
+              = group.text
+          .group-main__foote
+            .group-main__servername
+              = group.servername
+
+
+
